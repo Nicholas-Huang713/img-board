@@ -2,6 +2,10 @@ import React, {useEffect, useState} from 'react';
 import LoginButton from './components/LoginButton/LoginButton';
 import LogoutButton from './components/LogoutButton/LogoutButton';
 import { gapi } from 'gapi-script'
+import NavBar from './components/NavBar/NavBar';
+import LandingPage from './components/LandingPage/LandingPage';
+import ImageGallery from './components/ImageGallery/ImageGallery';
+import './App.scss';
 
 const clientId = "798778873798-seceoqhfukvss64t2o7u5iufrb9ckn0m.apps.googleusercontent.com";
 
@@ -30,11 +34,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello World
-      </h1>
-      <LoginButton />
-      <LogoutButton />
+      <NavBar />
+      <ImageGallery />
+    {/* <LandingPage /> */}
+      {/* <LoginButton />
+      <LogoutButton /> */}
 
     </div>
   );
